@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Module agora.common.Serializer</title>
+		<link rel="stylesheet" type="text/css" href="../../styles/ddox.css"/>
+		<link rel="stylesheet" href="../../prettify/prettify.css" type="text/css"/>
+		<script type="text/javascript" src="../../scripts/jquery.js">/**/</script><script type="text/javascript" src="../../scripts/ddox.js">/**/</script>
+	</head>
+	<body onload="setupDdox();">
+		<nav id="main-nav">
+			<noscript>
+				<p style="color: red">The search functionality needs JavaScript enabled</p>
+			</noscript>
+			<div id="symbolSearchPane" style="display: none">
+				<form action="#" method="GET">
+					<input id="symbolSearch" type="text" name="q" placeholder="Search for symbols" autocomplete="off" onchange="performSymbolSearch(40);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+				</form>
+				<ul id="symbolSearchResults" class="symbolList" style="display: none"></ul><script type="application/javascript" src="../../symbols.js"></script><script type="application/javascript">var symbolSearchRootDir = "../../";
+$('#symbolSearchPane').show();</script>
+			</div>
+			<ul class="tree-view">
+				<li class="tree-view ">
+					<div class="package ">agora
+					</div>
+			<ul class="tree-view">
+				<li class="tree-view collapsed">
+					<div class="package ">api
+					</div>
+			<ul class="tree-view">
+				<li class="tree-view collapsed">
+					<div class="package ">handler
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../../agora/api/handler/BlockExternalizedHandler.html">BlockExternalizedHandler</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/api/handler/PreImageReceivedHandler.html">PreImageReceivedHandler</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/api/handler/TransactionReceivedHandler.html">TransactionReceivedHandler</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/api/FullNode.html">FullNode</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/api/Validator.html">Validator</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li class="tree-view ">
+					<div class="package ">common
+					</div>
+			<ul class="tree-view">
+				<li class="tree-view collapsed">
+					<div class="package ">crypto
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../../agora/common/crypto/Crc16.html">Crc16</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/common/crypto/ECC.html">ECC</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/common/crypto/Key.html">Key</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/common/crypto/Schnorr.html">Schnorr</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/common/Amount.html">Amount</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/common/BanManager.html">BanManager</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/common/BitField.html">BitField</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/common/Config.html">Config</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/common/FileBasedLock.html">FileBasedLock</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/common/Hash.html">Hash</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/common/ManagedDatabase.html">ManagedDatabase</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/common/Metadata.html">Metadata</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/common/SCPHash.html">SCPHash</a>
+					</div>
+				</li>
+				<li>
+					<div class="module selected">
+						<a href="../../agora/common/Serializer.html">Serializer</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/common/Set.html">Set</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/common/Task.html">Task</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/common/Types.html">Types</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li class="tree-view collapsed">
+					<div class="package ">consensus
+					</div>
+			<ul class="tree-view">
+				<li class="tree-view collapsed">
+					<div class="package ">data
+					</div>
+			<ul class="tree-view">
+				<li class="tree-view collapsed">
+					<div class="package ">
+						<a href="../../agora/consensus/data/genesis.html">genesis</a>
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/data/genesis/Coinnet.html">Coinnet</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/data/genesis/Test.html">Test</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/data/Block.html">Block</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/data/DataPayload.html">DataPayload</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/data/Enrollment.html">Enrollment</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/data/Params.html">Params</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/data/PreImageInfo.html">PreImageInfo</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/data/Transaction.html">Transaction</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/data/UTXO.html">UTXO</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/data/ValidatorBlockSig.html">ValidatorBlockSig</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li class="tree-view collapsed">
+					<div class="package ">protocol
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/protocol/Data.html">Data</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/protocol/Nominator.html">Nominator</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li class="tree-view collapsed">
+					<div class="package ">state
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/state/UTXODB.html">UTXODB</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/state/UTXOSet.html">UTXOSet</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/state/ValidatorSet.html">ValidatorSet</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li class="tree-view collapsed">
+					<div class="package ">
+						<a href="../../agora/consensus/validation.html">validation</a>
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/validation/Block.html">Block</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/validation/Enrollment.html">Enrollment</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/validation/PreImage.html">PreImage</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/validation/Transaction.html">Transaction</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/EnrollmentManager.html">EnrollmentManager</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/EnrollmentPool.html">EnrollmentPool</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/Fee.html">Fee</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/PreImage.html">PreImage</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/Quorum.html">Quorum</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/SCPEnvelopeStore.html">SCPEnvelopeStore</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/consensus/SlashPolicy.html">SlashPolicy</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li class="tree-view collapsed">
+					<div class="package ">flash
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../../agora/flash/API.html">API</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/flash/Channel.html">Channel</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/flash/Config.html">Config</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/flash/ControlAPI.html">ControlAPI</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/flash/ErrorCode.html">ErrorCode</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/flash/Invoice.html">Invoice</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/flash/Network.html">Network</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/flash/Node.html">Node</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/flash/OnionPacket.html">OnionPacket</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/flash/Route.html">Route</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/flash/Scripts.html">Scripts</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/flash/Types.html">Types</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/flash/UpdateSigner.html">UpdateSigner</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li class="tree-view collapsed">
+					<div class="package ">network
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../../agora/network/Clock.html">Clock</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/network/NetworkClient.html">NetworkClient</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/network/NetworkManager.html">NetworkManager</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li class="tree-view collapsed">
+					<div class="package ">node
+					</div>
+			<ul class="tree-view">
+				<li class="tree-view collapsed">
+					<div class="package ">admin
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../../agora/node/admin/AdminInterface.html">AdminInterface</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/node/admin/QRCodeInterface.html">QRCodeInterface</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/node/BlockStorage.html">BlockStorage</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/node/FullNode.html">FullNode</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/node/Ledger.html">Ledger</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/node/main.html">main</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/node/Runner.html">Runner</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/node/TransactionPool.html">TransactionPool</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/node/Validator.html">Validator</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li class="tree-view collapsed">
+					<div class="package ">registry
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../../agora/registry/NameRegistryAPI.html">NameRegistryAPI</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/registry/NameRegistryImpl.html">NameRegistryImpl</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li class="tree-view collapsed">
+					<div class="package ">script
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../../agora/script/Engine.html">Engine</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/script/Lock.html">Lock</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/script/Opcodes.html">Opcodes</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/script/ScopeCondition.html">ScopeCondition</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/script/Script.html">Script</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/script/Stack.html">Stack</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li class="tree-view collapsed">
+					<div class="package ">stats
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../../agora/stats/App.html">App</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/stats/Block.html">Block</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/stats/EndpointReq.html">EndpointReq</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/stats/Server.html">Server</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/stats/Stats.html">Stats</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/stats/Tx.html">Tx</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/stats/Utils.html">Utils</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/stats/Validator.html">Validator</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li class="tree-view collapsed">
+					<div class="package ">test
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/BanManager.html">BanManager</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/Base.html">Base</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/BlockTimeConsensus.html">BlockTimeConsensus</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/Byzantine.html">Byzantine</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/Crypto.html">Crypto</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/EnrollDifferentUTXOs.html">EnrollDifferentUTXOs</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/EnrollmentManager.html">EnrollmentManager</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/Fee.html">Fee</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/Flash.html">Flash</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/GenesisBlock.html">GenesisBlock</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/GossipProtocol.html">GossipProtocol</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/InvalidBlockSigByzantine.html">InvalidBlockSigByzantine</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/Ledger.html">Ledger</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/LocalTransactions.html">LocalTransactions</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/LockHeight.html">LockHeight</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/ManyBlocks.html">ManyBlocks</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/ManyValidators.html">ManyValidators</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/MissingPreImageDetection.html">MissingPreImageDetection</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/MultiRoundConsensus.html">MultiRoundConsensus</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/NameRegistry.html">NameRegistry</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/NetworkClient.html">NetworkClient</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/NetworkDiscovery.html">NetworkDiscovery</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/NetworkManager.html">NetworkManager</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/PeriodicCatchup.html">PeriodicCatchup</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/Quorum.html">Quorum</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/QuorumPreimage.html">QuorumPreimage</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/QuorumShuffle.html">QuorumShuffle</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/Restart.html">Restart</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/RestoreSCPState.html">RestoreSCPState</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/RestoreSlashingInfo.html">RestoreSlashingInfo</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/Script.html">Script</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/Simple.html">Simple</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/SlashingMisbehavingValidator.html">SlashingMisbehavingValidator</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/TimeBlockInterval.html">TimeBlockInterval</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/TimeDrift.html">TimeDrift</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/Timeout.html">Timeout</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/UnlockAge.html">UnlockAge</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/ValidatorCleanRestart.html">ValidatorCleanRestart</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/ValidatorCount.html">ValidatorCount</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/ValidatorRecurringEnrollment.html">ValidatorRecurringEnrollment</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/test/VariableBlockSize.html">VariableBlockSize</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li class="tree-view collapsed">
+					<div class="package ">utils
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../../agora/utils/InetUtils.html">InetUtils</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/utils/libunwind.html">libunwind</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/utils/Log.html">Log</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/utils/PrettyPrinter.html">PrettyPrinter</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/utils/SCPPrettyPrinter.html">SCPPrettyPrinter</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/utils/Test.html">Test</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/utils/Utility.html">Utility</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/utils/WellKnownKeys.html">WellKnownKeys</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../agora/utils/Workarounds.html">Workarounds</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+			</ul>
+				</li>
+				<li class="tree-view collapsed">
+					<div class="package ">scpd
+					</div>
+			<ul class="tree-view">
+				<li class="tree-view collapsed">
+					<div class="package ">quorum
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../../scpd/quorum/QuorumIntersectionChecker.html">QuorumIntersectionChecker</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../scpd/quorum/QuorumTracker.html">QuorumTracker</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li class="tree-view collapsed">
+					<div class="package ">scp
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../../scpd/scp/BallotProtocol.html">BallotProtocol</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../scpd/scp/LocalNode.html">LocalNode</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../scpd/scp/NominationProtocol.html">NominationProtocol</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../scpd/scp/QuorumSetUtils.html">QuorumSetUtils</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../scpd/scp/SCP.html">SCP</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../scpd/scp/SCPDriver.html">SCPDriver</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../scpd/scp/Slot.html">Slot</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../scpd/scp/Utils.html">Utils</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li class="tree-view collapsed">
+					<div class="package ">tests
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../../scpd/tests/GlueTypes.html">GlueTypes</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../scpd/tests/LayoutTest.html">LayoutTest</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../scpd/tests/SizeTest.html">SizeTest</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li class="tree-view collapsed">
+					<div class="package ">types
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../../scpd/types/Stellar_SCP.html">Stellar_SCP</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../scpd/types/Stellar_types.html">Stellar_types</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../scpd/types/Utils.html">Utils</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../scpd/types/XDRBase.html">XDRBase</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../scpd/Cpp.html">Cpp</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+			</ul>
+		</nav>
+		<div id="main-contents">
+			<h1>Module agora.common.Serializer</h1><p>Function definition and helper related to serialization
+</p><section><p>This module exposes two main categories of functions:
+    - <code class="lang-d"><a href="../../agora/common/Serializer/serialize_full.html"><span class="pln">serializeFull</span></a></code> / <code class="lang-d"><a href="../../agora/common/Serializer/serialize_part.html"><span class="pln">serializePart</span></a></code> for serialization
+    - <code class="lang-d"><a href="../../agora/common/Serializer/deserialize_full.html"><span class="pln">deserializeFull</span></a></code> for deserialization
+</p>
+
+<p>    Any value type is natively supported and will just work, for serialization
+    and deserialization. More complex types (arrays, struct, enums) are also
+    supported natively. <code class="lang-d"><span class="kwd">class</span></code> are not supported by default, but there is
+    a way for one to implement a custom serialization (or deserialization)
+    policy, which can be used to make <code class="lang-d"><span class="kwd">class</span></code> serializable.
+</p>
+</section>
+
+			<section><section><h2>Serializer custom hook</h2>
+<p>If an aggregate implements the serialization hook, it will be called
+    directly instead of using the serializer's default.
+    The method signature is defined as follows:
+</p>
+<pre class="code"><code class="lang-d"><span class="kwd">struct </span><span class="typ">Foo
+</span><span class="pun">{
+     </span><span class="typ">void </span><span class="pln">serialize</span><span class="pun">(</span><span class="kwd">scope <a href="../../agora/common/Serializer/serialize_dg.html"></span><span class="typ">SerializeDg</span></a><span class="pun">) </span><span class="kwd">const @safe</span><span class="pun">;
+}</span></code></pre>
+<p>    The return type can be of another type, and other attributes
+    (such as <code class="lang-d"><span class="kwd">pure</span></code>, <code class="lang-d"><span class="kwd">nothrow</span></code>, etc...) can be used and are encouraged.
+</p>
+</section>
+<section><h2>Deserializer custom hook</h2>
+<p>Similar to the serializer's custom hook, an aggregate can implement
+    a method to handle deserialization manually.
+    The method signature is defined as follows:
+</p>
+<pre class="code"><code class="lang-d"><span class="kwd">struct </span><span class="typ">Foo
+</span><span class="pun">{
+    </span><span class="kwd">static </span><span class="pln">T fromBinary </span><span class="pun">(</span><span class="pln">T</span><span class="pun">) (</span><span class="kwd">scope <a href="../../agora/common/Serializer/deserialize_dg.html"></span><span class="typ">DeserializeDg</span></a><span class="pln"> data</span><span class="pun">,
+        </span><span class="kwd">in <a href="../../agora/common/Serializer/deserializer_options.html"></span><span class="typ">DeserializerOptions</span></a><span class="pun">) </span><span class="kwd">@safe</span><span class="pun">;
+}</span></code></pre>
+<p>    The deserializer might request an instance of a <code class="lang-d"><span class="kwd">const</span></code> or <code class="lang-d"><span class="kwd">immutable</span></code>
+    object, hence <code class="lang-d"><span class="pln">fromBinary</span></code> should not assume mutability.
+    Also, as there is no way to call a static method with an attributed
+    (e.g. <code class="lang-d"><span class="kwd">const</span></code>, <code class="lang-d"><span class="kwd">shared</span></code>, <code class="lang-d"><span class="kwd">immutable</span></code>) type, the template parameter
+    is required. As for serialization, extra attributes (<code class="lang-d"><span class="kwd">pure</span></code>, etc...)
+    are welcome and encouraged. A few implementation examples will follow.
+</p>
+</section>
+<section><h2>Memory allocation</h2>
+<p>The serializer can be made non-allocating (e.g. by outputting to a buffer),
+    although it currently can't be made <code class="lang-d"><span class="kwd">@nogc</span></code>.
+    The deserializer, due to its abiliity to deserialize immutable data,
+    and since the lifetime of the slice returned by <code class="lang-d"><a href="../../agora/common/Serializer/deserialize_dg.html"><span class="typ">DeserializeDg</span></a></code> is not
+    specified, should always allocate data.
+</p>
+</section>
+<section><h2>Unsigned Integer</h2>
+<p>By default, unsigned integer types (<code class="lang-d"><span class="typ">ushort</span></code>, <code class="lang-d"><span class="typ">uint</span></code>, <code class="lang-d"><span class="typ">ulong</span></code>) are
+    encoded to a variable-length size.
+    This means that encoding small unsigned values, such as length,
+    won't take 8 bytes as it would on 64 bits systems, but just one byte.
+    The encoding matches Bitcoin's scheme and can be disabled by providing
+    <code class="lang-d"><span class="typ">CompactMode<wbr/></span><span class="pun">.</span><span class="typ">No</span></code> when serializing / deserializing.
+    For more details see <code class="lang-d"><span class="pln">toVarInt</span></code> and <code class="lang-d"><span class="pln">fromVarInt</span></code> in this function.
+</p>
+</section>
+<section><h2>Resilience and length deserialization</h2>
+<p>Since this module is potentially fed untrusted data, its safety should be
+    reviewed with care. Custom deserialization methods should not assume the
+    data is valid, not should they assume there is enough data left in the
+    stream to complete the deserialization of the type.
+    In particular, length deserialization can be dangerous, as feeding an
+    unsanitized length to <code class="lang-d"><span class="kwd">new</span></code> could result in memory exhaustion.
+    For this reason, the deserializer currently rejects length over
+    <code class="lang-d"><span class="typ">MaxLengthDefault</span></code>. This limit can be adjusted in option, however
+    it won't be enforced if a length is deserialized with <code class="lang-d"><a href="../../agora/common/Serializer/deserialize_full.html"><span class="pln">deserializeFull</span></a></code>.
+    To deserialize length, use the <code class="lang-d"><a href="../../agora/common/Serializer/deserialize_length.html"><span class="pln">deserializeLength</span></a></code> function.
+</p>
+</section>
+<section><h2>Testing data types</h2>
+<p><code class="lang-d"><span class="pln">testSymmetry</span></code> is a convenient utility to test that a type can be
+    properly serialized and later deserialized, without memory corruption or
+    compilation error, by testing the type itself, its qualified variants,
+    and its ability to be (de)serialized as array or nested in an aggregate.
+    Refer to the function documentation for more details.
+</p>
+</section>
+<section><h2>Example</h2>
+<p>Pedestrian usage of serialization
+</p>
+<pre class="code"><code class="lang-d"><span class="kwd">import <a href="../../agora/common/Amount.html"></span><span class="pln">agora<wbr/></span><span class="pun">.</span><span class="pln">common<wbr/></span><span class="pun">.</span><span class="typ">Amount</span></a><span class="pun">;
+</span><span class="kwd">import <a href="../../agora/common/Hash.html"></span><span class="pln">agora<wbr/></span><span class="pun">.</span><span class="pln">common<wbr/></span><span class="pun">.</span><span class="typ">Hash</span></a><span class="pun">;
+</span><span class="kwd">import </span><span class="pln">agora<wbr/></span><span class="pun">.</span><span class="pln">common<wbr/></span><span class="pun">.</span><span class="typ">Serializer</span><span class="pun">;
+</span><span class="kwd">import <a href="../../agora/consensus/data/Block.html"></span><span class="pln">agora<wbr/></span><span class="pun">.</span><span class="pln">consensus<wbr/></span><span class="pun">.</span><span class="pln">data<wbr/></span><span class="pun">.</span><span class="typ">Block</span></a><span class="pun">;
+</span><span class="kwd">import <a href="../../agora/consensus/data/Transaction.html"></span><span class="pln">agora<wbr/></span><span class="pun">.</span><span class="pln">consensus<wbr/></span><span class="pun">.</span><span class="pln">data<wbr/></span><span class="pun">.</span><span class="typ">Transaction</span></a><span class="pun">;
+</span><span class="kwd">import <a href="../../agora/consensus/data/genesis/Test.html"></span><span class="pln">agora<wbr/></span><span class="pun">.</span><span class="pln">consensus<wbr/></span><span class="pun">.</span><span class="pln">data<wbr/></span><span class="pun">.</span><span class="pln">genesis<wbr/></span><span class="pun">.</span><span class="typ">Test</span></a><span class="pun">;
+
+</span><span class="com">// Serialize immutable data, then deserialize it as `const`
+</span><span class="typ">ubyte</span><span class="pun">[] </span><span class="pln">block_bytes </span><span class="pun">= <a href="../../agora/common/Serializer/serialize_full.html"></span><span class="pln">serializeFull</span></a><span class="pun">(</span><span class="typ">GenesisBlock</span><span class="pun">);
+</span><span class="kwd">assert</span><span class="pun">(<a href="../../agora/common/Serializer/deserialize_full.html"></span><span class="pln">deserializeFull</span></a><span class="pun">!(</span><span class="kwd">const</span><span class="pun">(</span><span class="typ">Block</span><span class="pun">))(</span><span class="pln">block_bytes</span><span class="pun">) == </span><span class="typ">GenesisBlock</span><span class="pun">);
+</span><span class="com">// A much better test for your own types is to do:
+</span><span class="pln">testSymmetry</span><span class="pun">(</span><span class="typ">GenesisBlock</span><span class="pun">);
+</span><span class="com">// The following also works, but tests a default-initialized instance,
+// which might not be as good of a test, as most values are likely to be `0`:
+//  - testSymmetry(Block.init);
+//  - testSymmetry!Block();
+
+// Internally, one could just concatenate two serialized items
+// The deserializer is driven by the data type it is asked for,
+// the data stream does not include any metadata
+</span><span class="typ">ubyte</span><span class="pun">[] </span><span class="pln">blocks_data </span><span class="pun">= <a href="../../agora/common/Serializer/serialize_full.html"></span><span class="pln">serializeFull</span></a><span class="pun">(</span><span class="typ">GenesisBlock</span><span class="pun">) ~ <a href="../../agora/common/Serializer/serialize_full.html"></span><span class="pln">serializeFull</span></a><span class="pun">(</span><span class="typ">GenesisBlock</span><span class="pun">);
+
+</span><span class="typ">void </span><span class="pln">deserializeEntry </span><span class="pun">() </span><span class="kwd">@safe
+</span><span class="pun">{
+    </span><span class="kwd">scope <a href="../../agora/common/Serializer/deserialize_dg.html"></span><span class="typ">DeserializeDg</span></a><span class="pln"> dg </span><span class="pun">= (</span><span class="pln">size</span><span class="pun">) </span><span class="kwd">@safe
+    </span><span class="pun">{
+        </span><span class="kwd">scope</span><span class="pun">(</span><span class="pln">exit</span><span class="pun">) </span><span class="pln">blocks_data </span><span class="pun">= </span><span class="pln">blocks_data</span><span class="pun">[</span><span class="pln">size </span><span class="pun">.. $];
+        </span><span class="kwd">return </span><span class="pln">blocks_data</span><span class="pun">[</span><span class="lit">0 </span><span class="pun">.. </span><span class="pln">size</span><span class="pun">];
+    };
+
+    </span><span class="kwd">const </span><span class="pln">newblock </span><span class="pun">= <a href="../../agora/common/Serializer/deserialize_full.html"></span><span class="pln">deserializeFull</span></a><span class="pun">!</span><span class="typ">Block</span><span class="pun">(</span><span class="pln">dg</span><span class="pun">);
+    </span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">newblock </span><span class="pun">== </span><span class="typ">GenesisBlock</span><span class="pun">);
+}
+
+</span><span class="pln">deserializeEntry</span><span class="pun">();
+</span><span class="pln">deserializeEntry</span><span class="pun">();
+
+</span><span class="com">// One can always implement their own policy
+// E.g. if for some reason you need to reorganize a struct's
+// field but need to keep the serialization the same
+</span><span class="kwd">static struct </span><span class="typ">CustomPolicy
+</span><span class="pun">{
+    </span><span class="typ">Amount</span><span class="pun">[] </span><span class="pln">values</span><span class="pun">;
+    </span><span class="typ">string </span><span class="pln">s</span><span class="pun">;
+    </span><span class="typ">uint </span><span class="pln">i</span><span class="pun">;
+
+    </span><span class="typ">void </span><span class="pln">serialize </span><span class="pun">(</span><span class="kwd">scope <a href="../../agora/common/Serializer/serialize_dg.html"></span><span class="typ">SerializeDg</span></a><span class="pln"> dg</span><span class="pun">) </span><span class="kwd">const @safe
+    </span><span class="pun">{
+        <a href="../../agora/common/Serializer/serialize_part.html"></span><span class="pln">serializePart</span></a><span class="pun">(</span><span class="kwd">this<wbr/></span><span class="pun">.</span><span class="pln">values</span><span class="pun">, </span><span class="pln">dg</span><span class="pun">);
+        <a href="../../agora/common/Serializer/serialize_part.html"></span><span class="pln">serializePart</span></a><span class="pun">(</span><span class="kwd">this<wbr/></span><span class="pun">.</span><span class="pln">i</span><span class="pun">, </span><span class="pln">dg</span><span class="pun">);
+        <a href="../../agora/common/Serializer/serialize_part.html"></span><span class="pln">serializePart</span></a><span class="pun">(</span><span class="kwd">this<wbr/></span><span class="pun">.</span><span class="pln">s</span><span class="pun">, </span><span class="pln">dg</span><span class="pun">);
+    }
+
+    </span><span class="kwd">static </span><span class="pln">QT fromBinary </span><span class="pun">(</span><span class="pln">QT</span><span class="pun">) (
+        </span><span class="kwd">scope <a href="../../agora/common/Serializer/deserialize_dg.html"></span><span class="typ">DeserializeDg</span></a><span class="pln"> dg</span><span class="pun">, </span><span class="kwd">in <a href="../../agora/common/Serializer/deserializer_options.html"></span><span class="typ">DeserializerOptions</span></a><span class="pln"> opts</span><span class="pun">)
+        </span><span class="kwd">@safe
+    </span><span class="pun">{
+        </span><span class="com">// One need to use temporary values for this,
+        // as D currently does not support returning a struct literal
+        // Additionally, https://issues.dlang.org/show_bug.cgi?id=20633
+        </span><span class="kwd">auto </span><span class="pln">values </span><span class="pun">= <a href="../../agora/common/Serializer/deserialize_full.html"></span><span class="pln">deserializeFull</span></a><span class="pun">!(</span><span class="kwd">typeof</span><span class="pun">(</span><span class="pln">QT<wbr/></span><span class="pun">.</span><span class="pln">values</span><span class="pun">))(</span><span class="pln">dg</span><span class="pun">, </span><span class="pln">opts</span><span class="pun">);
+        </span><span class="kwd">auto </span><span class="pln">i </span><span class="pun">= <a href="../../agora/common/Serializer/deserialize_full.html"></span><span class="pln">deserializeFull</span></a><span class="pun">!(</span><span class="kwd">typeof</span><span class="pun">(</span><span class="pln">QT<wbr/></span><span class="pun">.</span><span class="pln">i</span><span class="pun">))(</span><span class="pln">dg</span><span class="pun">, </span><span class="pln">opts</span><span class="pun">);
+        </span><span class="kwd">auto </span><span class="pln">s </span><span class="pun">= <a href="../../agora/common/Serializer/deserialize_full.html"></span><span class="pln">deserializeFull</span></a><span class="pun">!(</span><span class="kwd">typeof</span><span class="pun">(</span><span class="pln">QT<wbr/></span><span class="pun">.</span><span class="pln">s</span><span class="pun">))(</span><span class="pln">dg</span><span class="pun">, </span><span class="pln">opts</span><span class="pun">);
+        </span><span class="kwd">return </span><span class="pln">QT</span><span class="pun">(</span><span class="pln">values</span><span class="pun">, </span><span class="pln">s</span><span class="pun">, </span><span class="pln">i</span><span class="pun">);
+    }
+}
+
+</span><span class="kwd">auto </span><span class="pln">custom </span><span class="pun">= </span><span class="typ">CustomPolicy</span><span class="pun">([</span><span class="typ">Amount<wbr/></span><span class="pun">.</span><span class="pln">init</span><span class="pun">, </span><span class="typ">Amount<wbr/></span><span class="pun">.</span><span class="typ">UnitPerCoin</span><span class="pun">], </span><span class="str">"foo"</span><span class="pun">, </span><span class="lit">42</span><span class="pun">);
+</span><span class="pln">testSymmetry</span><span class="pun">(</span><span class="pln">custom</span><span class="pun">);
+</span></code></pre>
+</section>
+<section><h2>Example</h2>
+<p>Show some of the binary representation obtained by the serializer
+</p>
+<pre class="code"><code class="lang-d"><span class="kwd">import <a href="../../agora/common/Amount.html"></span><span class="pln">agora<wbr/></span><span class="pun">.</span><span class="pln">common<wbr/></span><span class="pun">.</span><span class="typ">Amount</span></a><span class="pun">;
+
+</span><span class="kwd">static struct </span><span class="typ">Foo
+</span><span class="pun">{
+    </span><span class="com">// A few basic types
+    </span><span class="typ">ubyte </span><span class="pln">a</span><span class="pun">;
+    </span><span class="typ">ushort </span><span class="pln">b</span><span class="pun">;
+    </span><span class="typ">uint </span><span class="pln">c</span><span class="pun">;
+    </span><span class="typ">ulong </span><span class="pln">d</span><span class="pun">;
+    </span><span class="com">// An POD aggregate
+    </span><span class="typ">Amount </span><span class="pln">e</span><span class="pun">;
+    </span><span class="com">// Mutable array
+    </span><span class="typ">ubyte</span><span class="pun">[] </span><span class="pln">f</span><span class="pun">;
+    </span><span class="com">// Signed data types are not encoded
+    </span><span class="typ">long </span><span class="pln">g</span><span class="pun">;
+    </span><span class="com">// Immutable array
+    </span><span class="typ">string </span><span class="pln">h</span><span class="pun">;
+}
+</span><span class="kwd">const </span><span class="typ">Foo </span><span class="pln">instance </span><span class="pun">= </span><span class="typ">Foo</span><span class="pun">(</span><span class="lit">1</span><span class="pun">, </span><span class="typ">ushort<wbr/></span><span class="pun">.</span><span class="pln">max</span><span class="pun">, </span><span class="typ">uint<wbr/></span><span class="pun">.</span><span class="pln">max</span><span class="pun">, </span><span class="typ">ulong<wbr/></span><span class="pun">.</span><span class="pln">max</span><span class="pun">, </span><span class="typ">Amount</span><span class="pun">(</span><span class="lit">100</span><span class="pun">), [</span><span class="lit">1</span><span class="pun">, </span><span class="lit">2</span><span class="pun">, </span><span class="lit">3</span><span class="pun">],
+    </span><span class="lit">42</span><span class="pun">, </span><span class="str">"69"</span><span class="pun">);
+</span><span class="typ">ubyte</span><span class="pun">[] </span><span class="pln">serialized </span><span class="pun">= <a href="../../agora/common/Serializer/serialize_full.html"></span><span class="pln">serializeFull</span></a><span class="pun">(</span><span class="pln">instance</span><span class="pun">);
+
+</span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">serialized </span><span class="pun">== [
+    </span><span class="lit">1</span><span class="pun">,                       </span><span class="com">// ubyte(1)     == 1 byte
+    </span><span class="lit">253</span><span class="pun">,</span><span class="lit">255</span><span class="pun">, </span><span class="lit">255</span><span class="pun">,            </span><span class="com">// ushort.max   == 3 bytes
+    </span><span class="lit">254</span><span class="pun">, </span><span class="lit">255</span><span class="pun">, </span><span class="lit">255</span><span class="pun">, </span><span class="lit">255</span><span class="pun">, </span><span class="lit">255</span><span class="pun">, </span><span class="com">// uint.max     == 5 bytes
+    </span><span class="lit">255</span><span class="pun">, </span><span class="lit">255</span><span class="pun">, </span><span class="lit">255</span><span class="pun">, </span><span class="lit">255</span><span class="pun">, </span><span class="lit">255</span><span class="pun">, </span><span class="lit">255</span><span class="pun">, </span><span class="lit">255</span><span class="pun">, </span><span class="lit">255</span><span class="pun">, </span><span class="lit">255</span><span class="pun">, </span><span class="com">// ulong.max == 9bytes
+    </span><span class="lit">100</span><span class="pun">,                     </span><span class="com">// Amount(100)  == 1 byte
+    </span><span class="lit">3</span><span class="pun">, </span><span class="lit">1</span><span class="pun">, </span><span class="lit">2</span><span class="pun">, </span><span class="lit">3</span><span class="pun">,              </span><span class="com">// ubyte[1,2,3] == 4 bytes
+    </span><span class="lit">42</span><span class="pun">, </span><span class="lit">0</span><span class="pun">, </span><span class="lit">0</span><span class="pun">, </span><span class="lit">0</span><span class="pun">, </span><span class="lit">0</span><span class="pun">, </span><span class="lit">0</span><span class="pun">, </span><span class="lit">0</span><span class="pun">, </span><span class="lit">0</span><span class="pun">, </span><span class="com">// long         == 8 bytes
+    </span><span class="lit">2</span><span class="pun">, </span><span class="lit">54</span><span class="pun">, </span><span class="lit">57</span><span class="pun">]);             </span><span class="com">// string       == 1 byte length + 2 char bytes
+</span><span class="kwd">assert</span><span class="pun">(</span><span class="pln">serialized<wbr/></span><span class="pun">.</span><span class="pln">deserializeFull</span><span class="pun">!</span><span class="typ">Foo</span><span class="pun">() == </span><span class="pln">instance</span><span class="pun">);
+</span></code></pre>
+</section>
+<section><h2>Example</h2>
+<p>Provides more details about <code class="lang-d"><span class="pln">fromBinary</span></code> requirements
+</p>
+<pre class="code"><code class="lang-d"><span class="kwd">static struct </span><span class="typ">Example
+</span><span class="pun">{
+    </span><span class="typ">ubyte</span><span class="pun">[] </span><span class="pln">data</span><span class="pun">;
+
+    </span><span class="kwd">public static </span><span class="pln">QT fromBinary </span><span class="pun">(</span><span class="pln">QT</span><span class="pun">) (
+        </span><span class="kwd">scope <a href="../../agora/common/Serializer/deserialize_dg.html"></span><span class="typ">DeserializeDg</span></a><span class="pln"> dg</span><span class="pun">, </span><span class="kwd">in <a href="../../agora/common/Serializer/deserializer_options.html"></span><span class="typ">DeserializerOptions</span></a><span class="pln"> opts</span><span class="pun">) </span><span class="kwd">@safe
+    </span><span class="pun">{
+        </span><span class="com">// The following is incorrect because it doesn't account for
+        // type constructors (e.g. `immutable`).
+        // More precisely, it would trigger the following error:
+        // ---
+        // cannot implicitly convert expression
+        // `deserializeFull(dg, DeserializerOptions.init)`
+        // of type `ubyte[]` to `immutable(ubyte[])`
+        // ---
+        </span><span class="kwd">version </span><span class="pun">(</span><span class="pln">none</span><span class="pun">)
+            </span><span class="kwd">return </span><span class="pln">QT</span><span class="pun">(<a href="../../agora/common/Serializer/deserialize_full.html"></span><span class="pln">deserializeFull</span></a><span class="pun">!(</span><span class="typ">ubyte</span><span class="pun">[])(</span><span class="pln">dg</span><span class="pun">, </span><span class="pln">opts</span><span class="pun">));
+
+        </span><span class="com">// The following is the correct version
+        </span><span class="kwd">return </span><span class="pln">QT</span><span class="pun">(<a href="../../agora/common/Serializer/deserialize_full.html"></span><span class="pln">deserializeFull</span></a><span class="pun">!(</span><span class="kwd">typeof</span><span class="pun">(</span><span class="pln">QT<wbr/></span><span class="pun">.</span><span class="pln">data</span><span class="pun">))(</span><span class="pln">dg</span><span class="pun">, </span><span class="pln">opts</span><span class="pun">));
+    }
+}
+
+</span><span class="typ">ubyte</span><span class="pun">[] </span><span class="pln">data </span><span class="pun">= [</span><span class="lit">3</span><span class="pun">, </span><span class="lit">1</span><span class="pun">, </span><span class="lit">2</span><span class="pun">, </span><span class="lit">3</span><span class="pun">];
+</span><span class="kwd">scope <a href="../../agora/common/Serializer/deserialize_dg.html"></span><span class="typ">DeserializeDg</span></a><span class="pln"> dg </span><span class="pun">= (</span><span class="pln">size</span><span class="pun">) {
+    </span><span class="kwd">scope </span><span class="pun">(</span><span class="pln">success</span><span class="pun">) </span><span class="pln">data </span><span class="pun">= </span><span class="pln">data</span><span class="pun">[</span><span class="pln">size </span><span class="pun">.. $];
+    </span><span class="kwd">return </span><span class="pln">data</span><span class="pun">[</span><span class="lit">0 </span><span class="pun">.. </span><span class="pln">size</span><span class="pun">];
+};
+
+</span><span class="kwd">immutable </span><span class="pln">ex </span><span class="pun">= </span><span class="typ">Example</span><span class="pun">([</span><span class="lit">1</span><span class="pun">, </span><span class="lit">2</span><span class="pun">, </span><span class="lit">3</span><span class="pun">]);
+</span><span class="kwd">assert</span><span class="pun">(</span><span class="typ">Example<wbr/></span><span class="pun">.</span><span class="pln">fromBinary</span><span class="pun">!(</span><span class="kwd">immutable</span><span class="pun">(</span><span class="typ">Example</span><span class="pun">))(</span><span class="pln">dg</span><span class="pun">, <a href="../../agora/common/Serializer/deserializer_options.default.html"></span><span class="typ">DeserializerOptions<wbr/></span><span class="pun">.</span><span class="typ">Default</span></a><span class="pun">)
+       ==  </span><span class="pln">ex</span><span class="pun">);
+</span></code></pre>
+</section>
+</section>
+			<section>
+				<h2>Functions</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<code>
+								<a id="deserializeFull" class="public" href="../../agora/common/Serializer/deserialize_full.html">deserializeFull</a><span class="tableEntryAnnotation">(data)</span>
+							</code>
+						</td>
+						<td>Deserialize a data type and return it
+</td>
+					</tr>
+					<tr>
+						<td>
+							<code>
+								<a id="deserializeLength" class="public" href="../../agora/common/Serializer/deserialize_length.html">deserializeLength</a><span class="tableEntryAnnotation">(dg, upperBound)</span>
+							</code>
+						</td>
+						<td>Deserialize a length, checks if it's within reasonable bound, and return it
+</td>
+					</tr>
+					<tr>
+						<td>
+							<code>
+								<a id="serializeFull" class="public" href="../../agora/common/Serializer/serialize_full.html">serializeFull</a><span class="tableEntryAnnotation">(record)</span>
+							</code>
+						</td>
+						<td>Serialize a type and returns it as binary data.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<code>
+								<a id="serializePart" class="public" href="../../agora/common/Serializer/serialize_part.html">serializePart</a><span class="tableEntryAnnotation">(record, dg, compact)</span>
+							</code>
+						</td>
+						<td>Serialize a type and returns it as binary data.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<code>
+								<a id="serializeToBuffer" class="public" href="../../agora/common/Serializer/serialize_to_buffer.html">serializeToBuffer</a><span class="tableEntryAnnotation">(record, buffer)</span>
+							</code>
+						</td>
+						<td>Convenience overload to <code class="lang-d"><a href="../../agora/common/Serializer/serialize_part.html"><span class="pln">serializePart</span></a></code> which use a buffer
+</td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h2>Structs</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<code>
+								<a id="DeserializerOptions" class="public" href="../../agora/common/Serializer/deserializer_options.html">DeserializerOptions</a>
+							</code>
+						</td>
+						<td>Options that configure the behavior of the deserializer
+</td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h2>Manifest constants</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Type</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a id="DefaultMaxLength" class="public" href="../../agora/common/Serializer/default_max_length.html">
+								<code>DefaultMaxLength</code>
+							</a>
+						</td>
+						<td>
+						</td>
+						<td>Default upper bound for <code class="lang-d"><a href="../../agora/common/Serializer/deserialize_length.html"><span class="pln">deserializeLength</span></a></code> and friends
+</td>
+					</tr>
+				</table>
+			</section>
+			<section>
+				<h2>Aliases</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Type</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a id="DeserializeDg" class="public" href="../../agora/common/Serializer/deserialize_dg.html">
+								<code>DeserializeDg</code>
+							</a>
+						</td>
+						<td>
+							<code class="prettyprint lang-d"><span class="kwd">@safe</span> <span class="kwd">const</span><span class="pun">(</span><span class="typ">ubyte</span><span class="pun">)</span><span class="pun">[]</span> <span class="kwd">delegate</span><span class="pun">(</span><span class="typ">ulong</span><span class="pun">)</span></code>
+						</td>
+						<td>Input source for deserialized data
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a id="SerializeDg" class="public" href="../../agora/common/Serializer/serialize_dg.html">
+								<code>SerializeDg</code>
+							</a>
+						</td>
+						<td>
+							<code class="prettyprint lang-d"><span class="kwd">@safe</span> <span class="typ">void</span> <span class="kwd">delegate</span><span class="pun">(</span><span class="kwd">in</span> <span class="typ">ubyte</span><span class="pun">[]</span><span class="pun">)</span></code>
+						</td>
+						<td>Sink for serialized data, writing to an underlying stream / buffer
+</td>
+					</tr>
+				</table>
+			</section>
+			<footer>
+				<table class="license-info">
+					<tr>
+						<th>Authors</th>
+						<td>
+							
+						</td>
+					</tr>
+					<tr>
+						<th>Copyright</th>
+						<td>
+							<p>Copyright (c) 2019-2020 BOS Platform Foundation Korea
+        All rights reserved.
+</p>
+
+						</td>
+					</tr>
+					<tr>
+						<th>License</th>
+						<td>
+							<p>MIT License. See LICENSE for details.
+</p>
+
+						</td>
+					</tr>
+				</table>
+				<p class="faint">Generated using the DDOX documentation generator</p>
+			</footer>
+		</div>
+	</body>
+</html>
